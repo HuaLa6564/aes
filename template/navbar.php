@@ -58,16 +58,26 @@
 			text-decoration:none;
 			font-size:17px;
 		}
+
+		.home{
+			float : left;
+			color : white;
+			text-align:center;
+			padding:14px 16px;
+			text-decoration:none;
+			font-size:17px;
+		}
 		
 		
 	</style>
 </head>
 
 <body>
+	
 	<div class="topnav">
+	<div class="home" ><a href="../template/home.php"><font style="font-family:Trajan Pro;color:white;"><i class="fa fa-home" style="font-size:36px"></i></font></a></div>
+
 	  <div class="welcome" ><font style="font-family:Trajan Pro;color:white;">Welcome to HRIS</font></div>
-	
-	
 	</div>
 </body>
 </html>
