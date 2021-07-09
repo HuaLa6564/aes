@@ -69,12 +69,12 @@ th {
 						<th>Name</th>
 						<th>IC</th>
 						<th>Gender</th>
-						<th>Email</th>
-						<th>Phone No</th>
+						<!-- <th>Email</th>
+						<th>Phone No</th> -->
 						<th>KWSP</th>
 						<th>Salary</th>
 						<th>Dept</th>
-						<th>Action</th>
+						<th colspan=3>Action</th>
 					</tr>
 					<?php $count=0; 
 					do { 
@@ -86,19 +86,19 @@ th {
 						<td><?php echo $row['name']; ?></td>
 						<td><?php echo $row['ic']; ?></td>
 						<td><?php echo $row['gender']; ?></td>
-						<td><?php echo $row['email']; ?></td>
-						<td><?php echo $row['phoneNo']; ?></td>
+						<!-- <td><?php //echo $row['email']; ?></td>
+						<td><?php //echo $row['phoneNo']; ?></td> -->
 						<td><?php echo $row['kwsp']; ?></td>
 						<td><?php echo $row['salary']; ?></td>
 						<td><?php echo $row['dept']; ?></td>
 						<td>
-							<a href="../employee/editEmpForm.php?no=<?php echo $row['no']; ?>">Edit</a>  
+							<a href="../employee/editEmpForm.php?no=<?php echo $row['no']; ?>"><i class="fa fa-edit" style="font-size:36px"></i></a>  
 						</td>
 						<td>
-							<a href="../employee/deleteEmp.php?no=<?php echo $row['no']; ?>" onclick="return check()">Delete</a>
+							<a href="../employee/deleteEmp.php?no=<?php echo $row['no']; ?>" onclick="return check()"><i class="fa fa-trash-o" style="font-size:36px"></i></a>
 						</td>		
 						<td>
-							<a href="../employee/viewEmp.php?no=<?php echo $row['no']; ?>">View</a>  
+							<a href="../employee/viewEmp.php?no=<?php echo $row['no']; ?>"><i class="fa fa-eye" style="font-size:36px"></i></a>  
 						</td>
 					<?php } while($row = $query -> fetch_assoc()) ?>
 		</table>

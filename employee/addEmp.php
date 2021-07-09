@@ -14,7 +14,21 @@
 		   $kwsp = $_POST['kwsp'];
 		   $salary = $_POST['salary'];
 		   $dept = $_POST['dept'];
+		   //image upload
+		//    $img_name = $_FILES['my_image']['name'];
+		//    $img_size = $_FILES['my_image']['size'];
+		//    $tmp_name = $_FILES['my_image']['tmp_name'];
+		//    $error = $_FILES['my_image']['error'];	
 		   
+		//    $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
+		//    $img_ex_lc = strtolower($img_ex);
+		//    $allowed_exs = array("jpg", "jpeg", "png"); 
+
+		//    $new_img_name = uniqid(true).'.'.$img_ex_lc;
+		//    $img_upload_path = 'uploads/'.$new_img_name;
+		//    move_uploaded_file($tmp_name, $img_upload_path);
+
+
 			$sql="INSERT INTO employee (emp_id, name, ic, gender, email, phoneNo, kwsp, salary,dept) 
 				  VALUES ('$emp_id', '$name', '$ic', '$gender', '$email', '$phoneNo', '$kwsp', '$salary', '$dept')";
 			$query=$conn->query($sql);
@@ -155,7 +169,12 @@ input[type=submit]:hover {
 					<option value="FN">Financial</option>
 				</select>
 				</div>
-				
+
+				<!-- <div class="col-sm-13 form-group"> -->
+					<!-- <input type="text" name="fname" placeholder="Enter File Name " Required> -->
+					<!-- <input type="file" id="my_image" name="my_image" accept="image/*"> -->
+				<!-- </div> -->
+
 				<div class="col-sm-13 form-group">
                     <input type="submit" class="btn btn-lg btn-warning btn-block" name="submit" value="Submit">
                 </div>

@@ -116,7 +116,7 @@ input[type="submit"]:active {
 	<div class="main">
 		<div class="loginSTYLE">
 		<h1>ADMIN LOG-IN </h1>
-		<form name="Flogin" method="post" action="template\checkLogin.php "> 
+		<form name="Flogin" method="post" action="../template/checkLogin.php "> 
 			
 				 <input type="text" placeholder="Username" name="username">  
 				<input type="password" placeholder="password" name="password">  

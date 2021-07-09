@@ -60,6 +60,13 @@ th {
         <center>
          <div class=="container">   
         <table border="0" width=80>
+
+                    <!-- <tr>
+                        <div class="alb">
+                            <img src="uploads/<?//=$images['my_image']?>">
+                        </div>
+                    </tr> -->
+                    
 					<tr>
 						<td><b>Emp ID : </b></td>
 						<td><?php echo $row['emp_id']; ?></td>
