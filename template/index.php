@@ -1,7 +1,7 @@
 
-	
 <html>
 <head>
+  <title>***HRIS***</title>
 	<link href="bootstrap/css/bootstrap.min.css" 
     <script src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
